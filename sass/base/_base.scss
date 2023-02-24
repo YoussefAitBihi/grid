@@ -1,0 +1,37 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  // We inherit the box-sizing from the root element (html) to easily reset it when we don't need it.
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  //
+  font-size: 62.5%; // 1rem = 10px
+
+  @include respond($bp-phone) {
+    font-size: 43.75%; // 1rem = 7px
+  }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+input {
+  font-family: inherit;
+}
+
+/* Revert the 'white-space' property for textarea elements on Safari */
+textarea {
+  white-space: revert;
+}

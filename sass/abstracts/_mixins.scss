@@ -1,0 +1,8 @@
+/*
+ * Respond to all breakpoints
+ */
+@mixin respond($bp) {
+  @media only screen and (max-width: $bp) {
+    @content;
+  }
+}

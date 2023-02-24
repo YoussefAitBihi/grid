@@ -1,0 +1,30 @@
+.sidebar-navigation {
+  background-color: $color-primary-light;
+  padding: 3rem 1.2rem;
+
+  &__icon {
+    &::before {
+      top: -1rem;
+    }
+
+    position: relative;
+    display: block;
+    width: 4rem;
+    height: 2px;
+    background-color: $color-grey-light-1;
+
+    &::before,
+    &::after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: inherit;
+      position: absolute;
+    }
+
+    &::after {
+      bottom: -1rem;
+    }
+  }
+}
