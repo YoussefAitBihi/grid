@@ -1,3 +1,248 @@
+/* ------------------------ */
+/*      PRIMARY COLORS      */
+/* ------------------------ */
+/* ------------------------ */
+/*      SECONDARY COLOR     */
+/* ------------------------ */
+/* ------------------------ */
+/*     LIGHT GREY COLORS    */
+/* ------------------------ */
+/* ------------------------ */
+/*     DARK GREY COLORS     */
+/* ------------------------ */
+/* ------------------------ */
+/*        FONT FAMILY       */
+/* ------------------------ */
+/* ------------------------ */
+/*        BREAKPOINTS       */
+/* ------------------------ */
+/*
+ * Respond to all breakpoints
+ */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
 
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+@media only screen and (max-width: 37.43em) {
+  html {
+    font-size: 43.75%;
+  }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+input {
+  font-family: inherit;
+}
+
+/* Revert the 'white-space' property for textarea elements on Safari */
+textarea {
+  white-space: revert;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+  line-height: 1.6;
+  color: #6d5d4b;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-rows: repeat(2, min-content);
+  grid-template-columns: min-content 1fr;
+}
+
+.header {
+  background-image: linear-gradient(90deg, rgba(16, 29, 44, 0.9), rgba(16, 29, 44, 0.9)), url(../img/hero.jpeg);
+  background-size: cover;
+  background-position: center center;
+  padding: 3rem 5rem;
+}
+.header__logo-box {
+  width: 15rem;
+  margin: auto;
+}
+.header__heading {
+  font-weight: 300;
+  margin: 5rem 0 2rem;
+}
+.header__heading > span {
+  display: block;
+}
+.header__heading--main {
+  font-size: 2.5rem;
+  color: #c69963;
+  text-transform: uppercase;
+}
+.header__heading--sub {
+  font-size: 4.5rem;
+  color: #f9f7f6;
+}
+.header__seen-on {
+  display: flex;
+  align-items: center;
+  margin-top: 4rem;
+}
+.header__line {
+  flex: 1;
+  background-color: #aaa;
+  height: 1px;
+}
+.header__seen-on-sentence {
+  color: #aaa;
+  font-size: 1.5rem;
+  padding: 2rem;
+}
+.header__seen-on-logos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 100px;
+  justify-items: center;
+}
+.header__seen-on-logo {
+  max-width: 15rem;
+  filter: brightness(0.8);
+}
+
+.sidebar-navigation {
+  background-color: #c69963;
+  padding: 3rem 1.2rem;
+}
+.sidebar-navigation__icon {
+  position: relative;
+  display: block;
+  width: 4rem;
+  height: 2px;
+  background-color: #f9f7f6;
+}
+.sidebar-navigation__icon::before {
+  top: -1rem;
+}
+.sidebar-navigation__icon::before, .sidebar-navigation__icon::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  position: absolute;
+}
+.sidebar-navigation__icon::after {
+  bottom: -1rem;
+}
+
+.realtors {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 5rem;
+  background-color: #101d2c;
+}
+.realtors__title {
+  text-align: center;
+  color: #b28451;
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 4rem;
+}
+.realtors__realtor {
+  display: grid;
+  grid-template-columns: min-content max-content;
+  gap: 2rem;
+}
+.realtors__realtor:not(:last-of-type) {
+  margin-bottom: 3rem;
+}
+.realtors__realtor-picture-box {
+  width: 6rem;
+}
+.realtors__realtor-picture {
+  border-radius: 50%;
+}
+.realtors__realtor-infos {
+  align-self: center;
+}
+.realtors__realtor-name {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #f9f7f6;
+}
+.realtors__realtor-houses {
+  font-size: 1.04rem;
+  text-transform: uppercase;
+  color: #aaa;
+}
+
+.footer {
+  background-color: burlywood;
+}
+
+/* ------------------------ */
+/*     HEADER CONTAINER     */
+/* ------------------------ */
+.header-container {
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  grid-template-rows: repeat(2, min-content);
+}
+
+/* ------------------------ */
+/*     SECTION FEATURES     */
+/* ------------------------ */
+.section-features {
+  background-color: blueviolet;
+}
+
+/* ------------------------ */
+/*       SECTION STORY      */
+/* ------------------------ */
+.section-story {
+  background-color: magenta;
+}
+
+/* ------------------------ */
+/*      SECTION HOUSES      */
+/* ------------------------ */
+.section-houses {
+  background-color: brown;
+}
+
+.section-gallery {
+  background-color: crimson;
+}
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #f9f7f6;
+  font-size: 1.4rem;
+  font-weight: 300;
+  padding: 1.5rem 3rem;
+  background-color: #c69963;
+  transition: all 0.2s;
+}
+.btn:link:hover,
+.btn:visited:hover {
+  background-color: #b28451;
+}
 
 /*# sourceMappingURL=main.css.map */

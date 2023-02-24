@@ -1,0 +1,35 @@
+/* ------------------------ */
+/*      PRIMARY COLORS      */
+/* ------------------------ */
+$color-primary-light: #c69963;
+$color-primary-dark: #b28451;
+
+/* ------------------------ */
+/*      SECONDARY COLOR     */
+/* ------------------------ */
+$color-secondary: #101d2c;
+
+/* ------------------------ */
+/*     LIGHT GREY COLORS    */
+/* ------------------------ */
+$color-grey-light-1: #f9f7f6;
+$color-grey-light-2: #aaa;
+
+/* ------------------------ */
+/*     DARK GREY COLORS     */
+/* ------------------------ */
+$color-grey-dark-1: #54483a;
+$color-grey-dark-2: #6d5d4b;
+
+/* ------------------------ */
+/*        FONT FAMILY       */
+/* ------------------------ */
+$font-family-primary: "Nunito", sans-serif;
+
+/* ------------------------ */
+/*        BREAKPOINTS       */
+/* ------------------------ */
+$bp-phone: 37.43em; // 599px => 1em = 16px default font-size browser
+$bp-tablet-port: 56.25em; // 900px
+$bp-tablet-land: 74.9375em; // 1199px
+$bp-big-desktop: 112.5em; // 1800px

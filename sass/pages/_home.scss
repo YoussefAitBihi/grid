@@ -1,0 +1,33 @@
+/* ------------------------ */
+/*     HEADER CONTAINER     */
+/* ------------------------ */
+.header-container {
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  grid-template-rows: repeat(2, min-content);
+}
+
+/* ------------------------ */
+/*     SECTION FEATURES     */
+/* ------------------------ */
+.section-features {
+  background-color: blueviolet;
+}
+
+/* ------------------------ */
+/*       SECTION STORY      */
+/* ------------------------ */
+.section-story {
+  background-color: magenta;
+}
+
+/* ------------------------ */
+/*      SECTION HOUSES      */
+/* ------------------------ */
+.section-houses {
+  background-color: brown;
+}
+
+.section-gallery {
+  background-color: crimson;
+}

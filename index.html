@@ -5,9 +5,127 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nexter project</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./img/favicon.png" />
+    <!-- Font -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;700&display=swap"
+    />
+    <!-- My custom style -->
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-    <h1>Hello world</h1>
+    <div class="grid-container">
+      <!-- NAVIGATION SIDEBAR -->
+      <aside class="sidebar-navigation">
+        <span class="sidebar-navigation__icon"></span>
+      </aside>
+      <!-- MAIN CONTENT -->
+      <main class="main-content">
+        <!-- HEADER CONTAINER -->
+        <div class="header-container">
+          <!-- HEADER -->
+          <header class="header">
+            <div class="header__logo-box">
+              <img
+                src="./img/logo.png"
+                alt="Website logo"
+                class="header__logo"
+              />
+            </div>
+            <h1 class="header__heading">
+              <span class="header__heading--main">You own home:</span>
+              <span class="header__heading--sub"
+                >The ultimate personal freedom</span
+              >
+            </h1>
+            <a href="#!" class="btn">View our properties</a><br />
+            <div class="header__seen-on">
+              <span class="header__line"></span>
+              <span class="header__seen-on-sentence">Seen on</span>
+              <span class="header__line"></span>
+            </div>
+            <div class="header__seen-on-logos">
+              <img
+                src="./img/logo-bbc.png"
+                alt="Seen logo 1"
+                class="header__seen-on-logo"
+              />
+              <img
+                src="./img/logo-bi.png"
+                alt="Seen logo 1"
+                class="header__seen-on-logo"
+              />
+              <img
+                src="./img/logo-forbes.png"
+                alt="Seen logo 1"
+                class="header__seen-on-logo"
+              />
+              <img
+                src="./img/logo-techcrunch.png"
+                alt="Seen logo 1"
+                class="header__seen-on-logo"
+              />
+            </div>
+          </header>
+          <!-- SIDEBAR REALTORS -->
+          <aside class="realtors">
+            <h2 class="realtors__title">Top 3 realtors</h2>
+            <div class="realtors__content">
+              <div class="realtors__realtor">
+                <div class="realtors__realtor-picture-box">
+                  <img
+                    src="./img/realtor-1.jpeg"
+                    alt="Realtor's picture 1"
+                    class="realtors__realtor-picture"
+                  />
+                </div>
+                <div class="realtors__realtor-infos">
+                  <h3 class="realtors__realtor-name">Morgan Salem</h3>
+                  <p class="realtors__realtor-houses">200 Houses sold</p>
+                </div>
+              </div>
+              <div class="realtors__realtor">
+                <div class="realtors__realtor-picture-box">
+                  <img
+                    src="./img/realtor-2.jpeg"
+                    alt="Realtor's picture 2"
+                    class="realtors__realtor-picture"
+                  />
+                </div>
+                <div class="realtors__realtor-infos">
+                  <h3 class="realtors__realtor-name">Ghanem Ahmed</h3>
+                  <p class="realtors__realtor-houses">180 Houses sold</p>
+                </div>
+              </div>
+              <div class="realtors__realtor">
+                <div class="realtors__realtor-picture-box">
+                  <img
+                    src="./img/realtor-3.jpeg"
+                    alt="Realtor's picture 3"
+                    class="realtors__realtor-picture"
+                  />
+                </div>
+                <div class="realtors__realtor-infos">
+                  <h3 class="realtors__realtor-name">Yasser Barakat</h3>
+                  <p class="realtors__realtor-houses">170 Houses sold</p>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+        <!-- SECTION FEATURES -->
+        <section class="section-features">All features</section>
+        <!-- SECTION STORY -->
+        <section class="section-story">A story</section>
+        <!-- SECTION HOUSES -->
+        <section class="section-houses">All houses</section>
+        <!-- SECTION GALLERY -->
+        <section class="section-gallery">Gallery</section>
+      </main>
+      <!-- FOOTER -->
+      <footer class="footer">Footer</footer>
+    </div>
   </body>
 </html>

@@ -1,0 +1,51 @@
+.realtors {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 5rem;
+
+  background-color: $color-secondary;
+
+  &__title {
+    text-align: center;
+    color: $color-primary-dark;
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+  }
+
+  &__realtor {
+    display: grid;
+    grid-template-columns: min-content max-content;
+    gap: 2rem;
+
+    &:not(:last-of-type) {
+      margin-bottom: 3rem;
+    }
+
+    &-picture-box {
+      width: 6rem;
+    }
+
+    &-picture {
+      border-radius: 50%;
+    }
+
+    &-infos {
+      align-self: center;
+    }
+
+    &-name {
+      font-size: 1.8rem;
+      font-weight: 400;
+      color: $color-grey-light-1;
+    }
+
+    &-houses {
+      font-size: 1.04rem;
+      text-transform: uppercase;
+      color: $color-grey-light-2;
+    }
+  }
+}

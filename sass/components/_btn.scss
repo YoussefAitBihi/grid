@@ -1,0 +1,16 @@
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $color-grey-light-1;
+  font-size: 1.4rem;
+  font-weight: 300;
+  padding: 1.5rem 3rem;
+  background-color: $color-primary-light;
+  transition: all 0.2s;
+
+  &:hover {
+    background-color: $color-primary-dark;
+  }
+}
