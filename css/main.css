@@ -63,6 +63,22 @@ body {
   color: #6d5d4b;
 }
 
+.heading-2 {
+  color: #c69963;
+  font-size: 2.2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.heading-2--center {
+  text-align: center;
+}
+.heading-2--mb-small {
+  margin-bottom: 2rem;
+}
+.heading-2--mb-medium {
+  margin-bottom: 4rem;
+}
+
 .grid-container {
   display: grid;
   grid-template-rows: repeat(2, min-content);
@@ -154,14 +170,6 @@ body {
   padding: 0 5rem;
   background-color: #101d2c;
 }
-.realtors__title {
-  text-align: center;
-  color: #b28451;
-  font-size: 1.6rem;
-  font-weight: 400;
-  text-transform: uppercase;
-  margin-bottom: 4rem;
-}
 .realtors__realtor {
   display: grid;
   grid-template-columns: min-content max-content;
@@ -207,7 +215,10 @@ body {
 /*     SECTION FEATURES     */
 /* ------------------------ */
 .section-features {
-  background-color: blueviolet;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 3rem;
+  padding: 10rem 5rem;
 }
 
 /* ------------------------ */
@@ -243,6 +254,66 @@ body {
 .btn:link:hover,
 .btn:visited:hover {
   background-color: #b28451;
+}
+
+.feature {
+  display: grid;
+  grid-template-rows: repeat(2, min-content);
+  grid-template-columns: min-content 1fr;
+  row-gap: 1rem;
+  column-gap: 1.5rem;
+}
+.feature__icon {
+  width: 4rem;
+  height: 4rem;
+  fill: #c69963;
+}
+.feature__title {
+  align-self: center;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+.feature__text {
+  grid-column: 2/span 2;
+  font-size: 1.4rem;
+}
+
+.story {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.story__pictures {
+  background: linear-gradient(90deg, rgba(178, 132, 81, 0.7), rgba(198, 153, 99, 0.7)), url(../img/back.jpg) center center/cover;
+  position: relative;
+}
+.story__picture {
+  position: absolute;
+}
+.story__picture--centered {
+  max-width: 60%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.story__picture--bottom-right {
+  max-width: 50%;
+  bottom: 5%;
+  right: -5%;
+}
+.story__content {
+  background-color: #f9f7f6;
+  padding: 7rem;
+}
+.story__short-quote {
+  font-size: 3rem;
+  font-weight: 400;
+  font-style: italic;
+  color: #54483a;
+}
+.story__long-quote {
+  font-size: 1.4rem;
+  font-style: italic;
+  margin-bottom: 4rem;
 }
 
 /*# sourceMappingURL=main.css.map */

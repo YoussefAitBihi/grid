@@ -1,0 +1,26 @@
+.feature {
+  display: grid;
+  grid-template-rows: repeat(2, min-content);
+  grid-template-columns: min-content 1fr;
+  row-gap: 1rem;
+  column-gap: 1.5rem;
+
+  &__icon {
+    width: 4rem;
+    height: 4rem;
+    fill: $color-primary-light;
+  }
+
+  &__title {
+    align-self: center;
+
+    font-size: 1.8rem;
+    font-weight: 400;
+  }
+
+  &__text {
+    grid-column: 2 / span 2;
+
+    font-size: 1.4rem;
+  }
+}

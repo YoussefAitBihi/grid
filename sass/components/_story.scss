@@ -1,0 +1,51 @@
+.story {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  &__pictures {
+    background: linear-gradient(
+        90deg,
+        rgba($color-primary-dark, 0.7),
+        rgba($color-primary-light, 0.7)
+      ),
+      url(../img/back.jpg) center center / cover;
+    position: relative;
+  }
+
+  &__picture {
+    position: absolute;
+
+    &--centered {
+      max-width: 60%;
+
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &--bottom-right {
+      max-width: 50%;
+
+      bottom: 5%;
+      right: -5%;
+    }
+  }
+
+  &__content {
+    background-color: $color-grey-light-1;
+    padding: 7rem;
+  }
+
+  &__short-quote {
+    font-size: 3rem;
+    font-weight: 400;
+    font-style: italic;
+    color: $color-grey-dark-1;
+  }
+
+  &__long-quote {
+    font-size: 1.4rem;
+    font-style: italic;
+    margin-bottom: 4rem;
+  }
+}

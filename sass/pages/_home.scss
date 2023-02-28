@@ -11,7 +11,11 @@
 /*     SECTION FEATURES     */
 /* ------------------------ */
 .section-features {
-  background-color: blueviolet;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 3rem;
+
+  padding: 10rem 5rem;
 }
 
 /* ------------------------ */
