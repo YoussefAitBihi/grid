@@ -8,7 +8,8 @@
     "devserver": "live-server",
     "start": "npm-run-all --parallel watch:sass devserver",
     "compile:sass": "sass ./sass/main.scss:css/main.comp.css",
-    "prefix:css": "postcss css/main.comp.css --use autoprefixer -b 'last 10 browsers' -o css/main.prefix.css",
+    "concat:css": "concat -o ./css/main.concat.css ./img/sprite.svg ./css/main.comp.css",
+    "prefix:css": "postcss css/main.concat.css --use autoprefixer -b 'last 10 browsers' -o css/main.prefix.css",
     "compress:css": "sass ./css/main.prefix.css:css/main.css --style compressed",
     "build:css": "npm-run-all compile:sass prefix:css compress:css"
   },

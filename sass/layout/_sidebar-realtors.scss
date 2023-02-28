@@ -6,15 +6,6 @@
 
   background-color: $color-secondary;
 
-  &__title {
-    text-align: center;
-    color: $color-primary-dark;
-    font-size: 1.6rem;
-    font-weight: 400;
-    text-transform: uppercase;
-    margin-bottom: 4rem;
-  }
-
   &__realtor {
     display: grid;
     grid-template-columns: min-content max-content;
