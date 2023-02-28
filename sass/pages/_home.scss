@@ -5,6 +5,8 @@
   display: grid;
   grid-template-columns: 1fr max-content;
   grid-template-rows: repeat(2, min-content);
+
+  display: none;
 }
 
 /* ------------------------ */
@@ -29,7 +31,11 @@
 /*      SECTION HOUSES      */
 /* ------------------------ */
 .section-houses {
-  background-color: brown;
+  padding: 10rem 5rem;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 5rem;
 }
 
 .section-gallery {

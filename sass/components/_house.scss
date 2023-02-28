@@ -1,0 +1,40 @@
+.house {
+  position: relative;
+  &__title {
+    width: max-content;
+
+    padding: 1.5rem 4rem;
+    background-color: #101d2c;
+    color: #f9f7f6;
+    font-size: 1.3rem;
+    font-weight: 300;
+    text-transform: uppercase;
+
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__characteristics {
+    background-color: $color-grey-light-1;
+    padding: 6rem 2rem 3rem;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 3rem;
+  }
+
+  &__characteristic {
+    display: flex;
+    // align-items: center;
+
+    font-size: 1.3rem;
+  }
+
+  &__icon {
+    width: 2rem;
+    height: 2rem;
+    fill: $color-primary-light;
+    margin-right: 1rem;
+  }
+}
