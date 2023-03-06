@@ -19,19 +19,12 @@
 }
 
 /* ------------------------ */
-/*       SECTION STORY      */
-/* ------------------------ */
-.section-story {
-  background-color: magenta;
-}
-
-/* ------------------------ */
 /*      SECTION HOUSES      */
 /* ------------------------ */
 .section-houses {
-  background-color: brown;
-}
+  padding: 10rem 5rem;
 
-.section-gallery {
-  background-color: crimson;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 5rem;
 }
