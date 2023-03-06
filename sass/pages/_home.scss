@@ -4,7 +4,10 @@
 .header-container {
   display: grid;
   grid-template-columns: 1fr max-content;
-  grid-template-rows: repeat(2, min-content);
+
+  @include respond($bp-tablet-port) {
+    display: block;
+  }
 }
 
 /* ------------------------ */
@@ -14,16 +17,12 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   gap: 3rem;
-
-  padding: 10rem 5rem;
 }
 
 /* ------------------------ */
 /*      SECTION HOUSES      */
 /* ------------------------ */
 .section-houses {
-  padding: 10rem 5rem;
-
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   gap: 5rem;

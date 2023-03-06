@@ -1,10 +1,22 @@
 .realtors {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0 5rem;
+  // Center the sidebar to the grid container
+  display: grid;
+  align-content: center;
 
+  padding: 0 5rem;
   background-color: $color-secondary;
+
+  @include respond($bp-tablet-port) {
+    padding: 2.5rem 0;
+  }
+
+  &__content {
+    @include respond($bp-tablet-port) {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+      row-gap: 2rem;
+    }
+  }
 
   &__realtor {
     display: grid;
@@ -13,6 +25,14 @@
 
     &:not(:last-of-type) {
       margin-bottom: 3rem;
+
+      @include respond($bp-tablet-port) {
+        margin-bottom: 0;
+      }
+    }
+
+    @include respond($bp-tablet-port) {
+      justify-content: center;
     }
 
     &-picture-box {
@@ -31,12 +51,20 @@
       font-size: 1.8rem;
       font-weight: 400;
       color: $color-grey-light-1;
+
+      @include respond($bp-tablet-port) {
+        font-size: 2.25rem;
+      }
     }
 
     &-houses {
       font-size: 1.04rem;
       text-transform: uppercase;
       color: $color-grey-light-2;
+
+      @include respond($bp-tablet-port) {
+        font-size: 1.3rem;
+      }
     }
   }
 }
