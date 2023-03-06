@@ -1,5 +1,6 @@
 .house {
   position: relative;
+
   &__title {
     width: max-content;
 
@@ -36,5 +37,13 @@
     height: 2rem;
     fill: $color-primary-light;
     margin-right: 1rem;
+
+    &--heart {
+      margin: 0;
+
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+    }
   }
 }

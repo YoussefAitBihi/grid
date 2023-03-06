@@ -5,8 +5,6 @@
   display: grid;
   grid-template-columns: 1fr max-content;
   grid-template-rows: repeat(2, min-content);
-
-  display: none;
 }
 
 /* ------------------------ */
@@ -21,13 +19,6 @@
 }
 
 /* ------------------------ */
-/*       SECTION STORY      */
-/* ------------------------ */
-.section-story {
-  background-color: magenta;
-}
-
-/* ------------------------ */
 /*      SECTION HOUSES      */
 /* ------------------------ */
 .section-houses {
@@ -36,8 +27,4 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   gap: 5rem;
-}
-
-.section-gallery {
-  background-color: crimson;
 }
