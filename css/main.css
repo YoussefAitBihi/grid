@@ -79,6 +79,13 @@ body {
   margin-bottom: 4rem;
 }
 
+/* ------------------------ */
+/*        TYPOGRAPHY        */
+/* ------------------------ */
+.text-center {
+  text-align: center;
+}
+
 .grid-container {
   display: grid;
   grid-template-rows: repeat(2, min-content);
@@ -138,6 +145,7 @@ body {
 }
 
 .sidebar-navigation {
+  grid-row: 1/-1;
   background-color: #c69963;
   padding: 3rem 1.2rem;
 }
@@ -199,7 +207,33 @@ body {
 }
 
 .footer {
-  background-color: burlywood;
+  grid-column: 2/-1;
+  background-color: #101d2c;
+  padding: 10rem 5rem;
+}
+.footer__list {
+  margin-bottom: 4rem;
+}
+.footer__link:link, .footer__link:visited {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 2rem;
+  color: #f9f7f6;
+  font-size: 1.4rem;
+  transition: all 0.2s ease-in-out;
+}
+.footer__link:link:hover, .footer__link:visited:hover {
+  background-color: rgba(249, 247, 246, 0.2);
+  transform: translateY(-1rem);
+}
+.footer__link:link:active, .footer__link:visited:active {
+  background-color: rgba(249, 247, 246, 0.1);
+  transform: translateY(-0.8rem);
+}
+.footer__copyright {
+  color: #aaa;
+  font-size: 1.3rem;
 }
 
 /* ------------------------ */
