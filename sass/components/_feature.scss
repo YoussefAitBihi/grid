@@ -16,11 +16,20 @@
 
     font-size: 1.8rem;
     font-weight: 400;
+    text-transform: uppercase;
+
+    @include respond($bp-tablet-port) {
+      font-size: 2.2rem;
+    }
   }
 
   &__text {
     grid-column: 2 / -1;
 
     font-size: 1.4rem;
+
+    @include respond($bp-tablet-port) {
+      font-size: 1.8rem;
+    }
   }
 }

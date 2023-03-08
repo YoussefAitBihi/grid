@@ -1,6 +1,10 @@
 /*
- * Respond to all breakpoints
- */
+* Allow us to respond to all our breakpoints
+* 
+* Order: Base file (base, typography...) > Layout (Grid, Header, Footer...) > pages > Components.
+* 
+* @content => Control directive added to this mixin to let us to add block of style
+*/
 @mixin respond($bp) {
   @media only screen and (max-width: $bp) {
     @content;

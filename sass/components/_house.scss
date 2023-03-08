@@ -30,6 +30,10 @@
     // align-items: center;
 
     font-size: 1.3rem;
+
+    @include respond($bp-tablet-port) {
+      font-size: 1.625rem;
+    }
   }
 
   &__icon {

@@ -4,3 +4,14 @@
 .text-center {
   text-align: center;
 }
+
+/* ------------------------ */
+/*          SPACING         */
+/* ------------------------ */
+.main-padding {
+  padding: 10rem 5rem;
+
+  @include respond($bp-tablet-port) {
+    padding: 6rem 3rem;
+  }
+}

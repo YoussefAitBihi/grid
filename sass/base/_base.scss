@@ -9,7 +9,18 @@
 
 html {
   box-sizing: border-box;
-  font-size: 62.5%; // 1rem = 10px
+
+  @include respond($bp-desktop) {
+    font-size: 62.5%; // 1rem = 10px
+  }
+
+  @include respond($bp-tablet-land) {
+    font-size: 56.25%; // 1rem = 9px
+  }
+
+  @include respond($bp-tablet-port) {
+    font-size: 50%; // 1rem = 8px
+  }
 
   @include respond($bp-phone) {
     font-size: 43.75%; // 1rem = 7px

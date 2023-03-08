@@ -2,6 +2,10 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 
+  @include respond($bp-tablet-port) {
+    display: block;
+  }
+
   &__pictures {
     background: linear-gradient(
         90deg,
@@ -10,13 +14,19 @@
       ),
       url(../img/back.jpg) center center / cover;
     position: relative;
+
+    @include respond($bp-tablet-port) {
+      height: 50vh;
+    }
   }
 
   &__picture {
     position: absolute;
+    object-fit: cover;
 
     &--centered {
       max-width: 60%;
+      max-height: 60%;
 
       top: 50%;
       left: 50%;
@@ -25,9 +35,14 @@
 
     &--bottom-right {
       max-width: 50%;
+      max-height: 50%;
 
       bottom: 5%;
       right: -5%;
+
+      @include respond($bp-tablet-port) {
+        right: 0;
+      }
     }
   }
 
@@ -47,5 +62,9 @@
     font-size: 1.4rem;
     font-style: italic;
     margin-bottom: 4rem;
+
+    @include respond($bp-tablet-port) {
+      font-size: 1.75rem;
+    }
   }
 }
